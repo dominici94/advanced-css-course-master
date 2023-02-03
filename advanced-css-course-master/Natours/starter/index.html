@@ -15,6 +15,7 @@
 
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
+
   <body>
     <div class="navigation">
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
@@ -62,7 +63,9 @@
           <span class="heading-primary--main">Outdoors</span>
           <span class="heading-primary--sub">is where life happens</span>
         </h1>
-        <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+        <a href="#section-tours" class="btn btn--white btn--animated"
+          >Discover our tours</a
+        >
       </div>
     </header>
 
@@ -132,6 +135,7 @@
               </p>
             </div>
           </div>
+
           <div class="col-1-of-4">
             <div class="feature-box">
               <i class="icon-basic-compass feature-box__icon"></i>
@@ -145,6 +149,7 @@
               </p>
             </div>
           </div>
+
           <div class="col-1-of-4">
             <div class="feature-box">
               <i class="icon-basic-map feature-box__icon"></i>
@@ -158,6 +163,7 @@
               </p>
             </div>
           </div>
+
           <div class="col-1-of-4">
             <div class="feature-box">
               <i class="icon-basic-heart feature-box__icon"></i>
@@ -174,7 +180,7 @@
         </div>
       </section>
 
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Most popular tours</h2>
         </div>
@@ -205,7 +211,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$297</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now</a>
+                  <a href="#popup" class="btn btn--white">Book now</a>
                 </div>
               </div>
             </div>
@@ -236,7 +242,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$497</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now</a>
+                  <a href="#popup" class="btn btn--white">Book now</a>
                 </div>
               </div>
             </div>
@@ -274,7 +280,7 @@
           </div>
         </div>
         <div class="u-center-text u-margin-top-huge">
-          <a href="#" class="btn btn--green">Discover all tours</a>
+          <a href="#popup" class="btn btn--green">Discover all tours</a>
         </div>
       </section>
 
@@ -443,7 +449,7 @@
 
         <div class="col-1-of-2">
           <p class="footer__copyright">
-            Built my <a href="#" class="footer__link">Jonas Schmedtmann</a> for
+            Built by <a href="#" class="footer__link">Jonas Schmedtmann</a> for
             his only course
             <a href="#" class="footer__link">Advanced CSS and Sass</a>.
             Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use
@@ -454,6 +460,34 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img" />
+          <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start booking now
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read these terms before booking
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            ea dicta dignissimos quod? Quasi ipsam quisquam laborum earum natus
+            fuga reiciendis repudiandae magni cumque libero ea harum
+            necessitatibus, tenetur tempora? Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Asperiores, minus architecto nemo
+            adipisci nulla deleniti quos et mollitia fuga modi sunt doloribus,
+            magnam, atque eligendi.
+          </p>
+          <a href="#" class="btn btn--green">Book now</a>
+        </div>
+      </div>
+    </div>
     <!--
       GRID EXAMPLE
       <section class="grid-test">
