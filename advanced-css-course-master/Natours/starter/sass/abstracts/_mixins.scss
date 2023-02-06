@@ -31,6 +31,8 @@ $breakpoint argument choices:
 - big-dekstop
 */
 
+// Order to aplly mediaqueries: Base + Typography > general layout + grid > page layout > components
+
 // 1em = 16px => media queries related to browser font, not working with rem
 
 @mixin respond($breakpoint) {
